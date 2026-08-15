@@ -94,8 +94,8 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* scroll room: 500vh of pin distance — this is what makes the reel slow & readable */}
-      <div className="relative h-[500vh]">
+      {/* scroll room: ~583vh of pin distance (≈41.7vh per card segment) — keeps the slow, readable reel pace with 6 projects */}
+      <div className="relative h-[583vh]">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
           <motion.div ref={trackRef} style={{ x }} className="relative z-10 flex gap-8 pl-6 pr-16 md:pl-10 md:pr-24">
             {PROJECTS.map((project, i) => (
@@ -235,7 +235,7 @@ function ProjectCard({
           )}
           {/* index badge */}
           <span className="absolute left-4 top-4 rounded-full bg-surface/90 px-3 py-1 font-mono text-[11px] text-ink backdrop-blur">
-            {project.id} / 05
+            {project.id} / {String(PROJECTS.length).padStart(2, "0")}
           </span>
           <span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-ink text-bg opacity-0 transition-all duration-300 group-hover:opacity-100">
             ↗

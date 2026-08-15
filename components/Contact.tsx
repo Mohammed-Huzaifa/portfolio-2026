@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useInView } from "motion/react";
+import { LuMail, LuPhone } from "react-icons/lu";
 import { useRef } from "react";
 import MagneticButton from "@/components/MagneticButton";
 import { CONTACT } from "@/lib/data";
@@ -52,21 +53,21 @@ export default function Contact() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.35 }}
         >
-          <MagneticButton href={`mailto:${CONTACT.email}`} className="group rounded-full bg-ink px-9 py-5 text-bg">
-            <span className="font-display text-sm font-semibold uppercase tracking-[0.1em]">
-              {CONTACT.email}
-            </span>
-            <span className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
-              ↗
-            </span>
+          <MagneticButton
+            href={`mailto:${CONTACT.email}`}
+            title="Email me"
+            className="group flex h-16 w-16 items-center justify-center rounded-full bg-ink text-bg transition-transform duration-300 hover:scale-105 md:h-[4.5rem] md:w-[4.5rem]"
+          >
+            <LuMail className="h-6 w-6 transition-transform duration-300 group-hover:-translate-y-0.5" />
+            <span className="sr-only">Email me</span>
           </MagneticButton>
           <MagneticButton
             href={CONTACT.phoneHref}
-            className="rounded-full border border-line2 px-9 py-5 transition-colors hover:border-blue"
+            title="Call me"
+            className="flex h-16 w-16 items-center justify-center rounded-full border border-line2 text-ink transition-all duration-300 hover:scale-105 hover:border-blue hover:text-blue md:h-[4.5rem] md:w-[4.5rem]"
           >
-            <span className="font-display text-sm font-semibold uppercase tracking-[0.1em] text-ink transition-colors group-hover:text-blue">
-              {CONTACT.phone}
-            </span>
+            <LuPhone className="h-6 w-6" />
+            <span className="sr-only">Call me</span>
           </MagneticButton>
         </motion.div>
 

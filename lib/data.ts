@@ -136,15 +136,6 @@ export const PROJECTS = [
   },
   {
     id: "04",
-    title: "Commerce Bear",
-    role: "Technical Lead — Software for Lighting, Furniture & Home",
-    desc: "A B2B SaaS platform purpose-built for lighting, furniture, and home furnishing dealers. Streamlines catalog management, quoting, and order workflows — helping dealers operate faster and sell smarter.",
-    tags: ["B2B SaaS", "React", "Node.js", "PostgreSQL", "Dealer Management", "E-commerce"],
-    href: "https://www.commercebear.com",
-    image: "/projects/commercebear.png",
-  },
-  {
-    id: "05",
     title: "Digiworks AI",
     role: "Technical Lead — AI Coworkers for Enterprise",
     desc: "An enterprise AI platform that deploys intelligent AI coworkers into business operations. Ships as a full product suite — a marketing site, a user-facing app, and an admin portal — enabling teams to automate complex workflows at scale.",
@@ -156,6 +147,25 @@ export const PROJECTS = [
       { label: "Portal", href: "https://portal.digiworks.ai" },
     ],
     image: "/projects/digiworks.png",
+  },
+  {
+    id: "05",
+    title: "The Arden",
+    role: "Digital Audit & QA — Boutique Hotel",
+    desc: "Part of the LFTFIELD hospitality portfolio alongside The Loden. Audited The Arden's booking journey, SEO & local search, and AI-search readiness — surfacing UX issues, verifying fixes, and mapping growth recommendations into a 90-day roadmap.",
+    tags: ["Digital Audit", "QA", "SEO", "Booking UX", "AEO"],
+    href: "https://www.thearden.com",
+    image: "/projects/logos/arden.png",
+    logo: true,
+  },
+  {
+    id: "06",
+    title: "The American Bro Rally",
+    role: "Frontend Build — Meet Joey® Campaign",
+    desc: "Built the hero + tour-dates page for the Meet Joey® x Street Bike Tommy American Bro Rally — a responsive BigCommerce widget with custom hero artwork, the BR◯RALLY brand ring, and a stop-by-stop tour grid. Figma-to-code, pixel-verified across mobile, tablet, and desktop.",
+    tags: ["BigCommerce", "HTML/CSS", "Responsive", "Campaign", "Figma → Code"],
+    href: "https://meetjoey.com/findjoey/",
+    image: "/projects/american-bro-rally.png",
   },
 ];
 

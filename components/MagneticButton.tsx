@@ -10,6 +10,7 @@ interface MagneticButtonProps {
   onClick?: () => void;
   href?: string;
   target?: string;
+  title?: string;
 }
 
 export default function MagneticButton({
@@ -19,6 +20,7 @@ export default function MagneticButton({
   onClick,
   href,
   target,
+  title,
 }: MagneticButtonProps) {
   const ref = useRef<HTMLDivElement>(null);
   const x = useMotionValue(0);
@@ -53,7 +55,7 @@ export default function MagneticButton({
 
   if (href) {
     return (
-      <a href={href} target={target} rel={target ? "noopener noreferrer" : undefined} className="inline-block">
+      <a href={href} target={target} title={title} rel={target ? "noopener noreferrer" : undefined} className="inline-block">
         {inner}
       </a>
     );

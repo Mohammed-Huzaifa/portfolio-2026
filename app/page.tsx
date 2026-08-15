@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import Skills from "@/components/Skills";
 import Areas from "@/components/Areas";
 import Projects from "@/components/Projects";
+import Hoardy from "@/components/Hoardy";
 import Personal from "@/components/Personal";
 import Mission from "@/components/Mission";
 import Contact from "@/components/Contact";
@@ -18,6 +19,7 @@ export default function Home() {
       <Skills />
       <Areas />
       <Projects />
+      <Hoardy />
       <Personal />
       <Mission />
       <Contact />
